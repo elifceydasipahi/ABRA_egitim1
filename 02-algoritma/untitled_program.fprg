@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Untitled Program"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value="Created with Flowonline2 - PiBOH under AGPL-3.0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a,b,alan" type="Integer" array="False" size=""/>
+            <output expression="&quot;a kenari: &quot;" newline="True"/>
+            <do expression="a &lt;= 0">
+                <input variable="a"/>
+            </do>
+            <output expression="&quot;b kenari: &quot;" newline="True"/>
+            <do expression="b &lt;= 0">
+                <input variable="b"/>
+            </do>
+            <assign variable="alan" expression="a*b"/>
+            <output expression="&quot;alan = &quot; &amp; alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
