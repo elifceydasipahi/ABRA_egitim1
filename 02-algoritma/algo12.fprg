@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Untitled Program"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value="Created with Flowonline2 - PiBOH under AGPL-3.0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n,ttop,tcarp,ctop,kalan,i" type="Real" array="False" size=""/>
+            <assign variable="ttop" expression="0"/>
+            <assign variable="tcarp" expression="1"/>
+            <assign variable="ctop" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <input variable="n"/>
+            <do expression="i&lt;=n">
+                <assign variable="kalan" expression="i%2"/>
+                <if expression="kalan=0">
+                    <then>
+                        <assign variable="ctop" expression="ctop+(i*i)"/>
+                    </then>
+                    <else>
+                        <assign variable="ttop" expression="ttop+i"/>
+                        <assign variable="tcarp" expression="tcarp*i"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </do>
+            <output expression="ttop" newline="True"/>
+            <output expression="tcarp" newline="True"/>
+            <output expression="ctop" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

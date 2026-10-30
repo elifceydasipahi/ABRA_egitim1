@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Untitled Program"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value="Created with Flowonline2 - PiBOH under AGPL-3.0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="saat,ücret,top" type="Real" array="False" size=""/>
+            <input variable="saat"/>
+            <input variable="ücret"/>
+            <if expression="saat &gt; 40">
+                <then>
+                    <assign variable="saat" expression="40+(saat-40)*2"/>
+                </then>
+                <else>
+                </else>
+            </if>
+            <assign variable="top" expression="saat*ücret"/>
+            <output expression="top" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
